@@ -16,6 +16,19 @@ body{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    background-color: var(--primary-color);
+}
+
+:root{
+    --primary-color: #fffcea;
+    --secondary-color: #353535;
+    --accent-color: #ec0000eb;
+}
+
+::selection{
+    background-color: #000;
+    color: #fff;
+
 }
 
 /* Utility Classes */
@@ -30,4 +43,53 @@ body{
 
 .poppins{
     font-family: "Poppins", sans-serif;
+}
+
+.thin{
+    font-weight: 200;
+}
+
+.link{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: var(--accent-color);
+}
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Nav Bar */
+
+.navBar{
+    background-color: var(--primary-color);
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+}
+
+.navBar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    display: inline;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
 }

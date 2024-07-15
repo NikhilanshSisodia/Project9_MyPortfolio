@@ -19,16 +19,33 @@ body{
     background-color: var(--primary-color);
 }
 
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
 :root{
     --primary-color: #fffcea;
     --secondary-color: #353535;
     --accent-color: #ec0000eb;
+    --padding-inline: 20px;
 }
 
 ::selection{
     background-color: #000;
     color: #fff;
-
 }
 
 /* Utility Classes */
@@ -60,13 +77,53 @@ body{
     color: var(--accent-color);
 }
 
+.primaryBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 40px;
+    padding: 4px var(--padding-inline);
+    transition: all 0.2s ease-in-out;
+}
+
+.primaryBtn:hover{
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-container{
+    display: flex;
+    gap: 20px;
+}
+
+.secondaryBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 40px;
+    padding: 4px var(--padding-inline);
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.secondaryBtn:hover{
+    color: #fff;
+    border: 2px solid var(--secondary-color);
+    background-color: #111;
+}
+
 /* Header */
 
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* Nav Bar */
@@ -85,6 +142,7 @@ header{
 }
 
 .name{
+    font-size: 2rem;
     display: inline;
     cursor: pointer;
 }
@@ -92,4 +150,39 @@ header{
 .nav-links{
     display: flex;
     gap: 50px;
+}
+
+/* About */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    width: 65%;
+}
+
+.rightAbout{
+     display: flex;
+    width: 20%;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+}
+
+.intro-img{
+    height: 600px;
 }

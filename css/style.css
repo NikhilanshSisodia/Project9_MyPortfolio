@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    cursor: none;
 }
 
 body{
@@ -16,6 +17,7 @@ body{
     flex-direction: column;
     width: 100%;
     background-color: var(--primary-color);
+    cursor: none;
 }
 
 a{
@@ -38,7 +40,8 @@ p{
 :root{
     --primary-color: #fffcea;
     --secondary-color: #353535;
-    --accent-color: #ec0000eb;
+    --accent-color: #e94430;
+    --accent-dark-color: #c70000;
     --padding-inline: 20px;
 }
 
@@ -69,7 +72,7 @@ p{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
-    cursor: pointer;
+    cursor: none;
 }
 
 .link:hover{
@@ -130,6 +133,41 @@ p{
     border-radius: 20px;
 }
 
+.cursor{
+    z-index: 99999;
+    width: 20px;
+    position: fixed;
+    height: 20px;
+    border-radius: 50%;
+    background: #35353550;
+    pointer-events: none;
+    box-shadow: 0 0 5px #35353501,
+                0 0 20px #35353501,
+                0 0 50px #35353501;
+    animation: colors 5s infinite;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+@keyframes colors {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+}
 /* Header */
 
 header{
@@ -157,7 +195,7 @@ header{
 .name{
     font-size: 2rem;
     display: inline;
-    cursor: default;
+    cursor: none;
 }
 
 .nav-links{
@@ -275,7 +313,7 @@ main{
     padding: 4px var(--padding-inline);
     border-radius: 5px;
     color: var(--secondary-color);
-    cursor: pointer;
+    cursor: none;
 }
 
 main .divider{

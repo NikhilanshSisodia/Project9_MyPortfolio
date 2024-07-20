@@ -68,6 +68,10 @@ p{
     font-weight: 200;
 }
 
+.regular{
+    font-weight: 600;
+}
+
 .link{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -316,6 +320,47 @@ main{
     cursor: none;
 }
 
-main .divider{
-    margin-block: 40px;
+/* Projects */
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project p{
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 10px 0 50px 0;
+}
+
+.project-content-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 60px;
+    padding: 40px 40px;
+    border: 2px solid var(--secondary-color);
+}
+
+.projectImg{
+    width: 300px;
+    border-radius: 50px;
 }

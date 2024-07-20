@@ -50,6 +50,10 @@ p{
     color: #fff;
 }
 
+img{
+    user-select: none;
+}
+
 /* Utility Classes */
 
 .container{
@@ -77,6 +81,7 @@ p{
     font-weight: 300;
     font-size: 1.2rem;
     cursor: none;
+    user-select: none;
 }
 
 .link:hover{
@@ -91,6 +96,7 @@ p{
     border-radius: 40px;
     padding: 4px var(--padding-inline);
     transition: all 0.2s ease-in-out;
+    user-select: none;
 }
 
 .primaryBtn:hover{
@@ -115,6 +121,7 @@ p{
     color: #fff;
     background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
+    user-select: none;
 }
 
 .secondaryBtn:hover{
@@ -200,6 +207,7 @@ header{
     font-size: 2rem;
     display: inline;
     cursor: none;
+    user-select: none;
 }
 
 .nav-links{
@@ -361,6 +369,114 @@ main{
 }
 
 .projectImg{
-    width: 300px;
+    width: 200px;
     border-radius: 50px;
 }
+
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact p{
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 10px 0 50px 0;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+}
+
+.left-contact{
+    width: 40%;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-form input{
+    width: 100%;
+    padding: 10px 15px;
+    height: 50px;
+}
+
+.contact-form textarea{
+    width: 100%;
+    padding: 10px 15px;
+    resize: vertical;
+    height: 80px;
+}
+
+.contact-form a{
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.right-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 50px;
+}
+
+.right-contact h3{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.right-contact p{
+    text-align: justify;
+    margin: 0;
+}
+
+.email{
+    display: flex;
+    gap: 20px;
+}
+
+.emailIcon{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailImg{
+    width: 50px;
+    height: 50px;
+}
+
+.email p{
+    font-size: 21px;
+    margin: auto 0;
+}
+

@@ -24,3 +24,19 @@ document.addEventListener('mousemove',function (e){
 document.addEventListener('mouseout', ()=>{
     cursor.style.display = "none";
 });
+
+//Menu
+
+const toggleBtn = document.querySelector('.menu');
+const menu = document.querySelector('.nav-links');
+
+toggleBtn.addEventListener('click',callMenu);
+
+function callMenu(){
+    if(menu.getAttribute('id')=='null'){
+        menu.setAttribute('id','flex');
+    }
+    else if(menu.getAttribute('id')=='flex'){
+        menu.setAttribute('id','null');
+    }
+}

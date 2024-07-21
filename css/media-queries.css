@@ -92,6 +92,29 @@
     .container{
         width: 90vw;
     }
+    
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position :absolute;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        gap: 40px;
+        background: var(--primary-color);
+    }
+
+    .link{
+        font-size: 36px;
+    }
+    
+    .menu{
+        height: 30px;
+        display: block;
+    }
 }
 
 @media (max-width: 440px) {

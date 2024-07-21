@@ -46,8 +46,8 @@ p{
 }
 
 ::selection{
-    background-color: #000;
-    color: #fff;
+    background-color: #353535;
+    color: #fffcea;
 }
 
 img{
@@ -179,6 +179,7 @@ img{
     transform: translate(-30%,-30%);
     border-radius: 50%;
 }
+
 /* Header */
 
 header{
@@ -215,7 +216,7 @@ header{
     gap: 50px;
 }
 
-/* Introduction */
+/* Introduction Section */
 
 .intro{
     display: flex;
@@ -263,7 +264,7 @@ main{
     flex-direction: column;
 }
 
-/* About  */
+/* About Section */
 
 .about{
     display: flex;
@@ -326,9 +327,10 @@ main{
     border-radius: 5px;
     color: var(--secondary-color);
     cursor: none;
+    user-select: none;
 }
 
-/* Projects */
+/* Projects Section */
 
 .project{
     display: flex;
@@ -373,7 +375,7 @@ main{
     border-radius: 50px;
 }
 
-/* Contact */
+/* Contact Section */
 
 .contact{
     display: flex;
@@ -397,9 +399,9 @@ main{
 
 .contact-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    gap: 10%;
+    /* gap: 10%; */
 }
 
 .left-contact{
@@ -480,3 +482,99 @@ main{
     margin: auto 0;
 }
 
+/* Footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Footer Section */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin-top: 80px;
+    color: var(--primary-color);
+    align-items: center;
+    padding-block: 50PX;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.socialIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.linkedinIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.instaIcon{
+    width: 40px;
+    height: 40px;
+}
+
+.instapath{
+    color: var(--primary-color);
+}
+
+.right-footer h3{
+    margin-block: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.left-footer h3{
+    margin-block: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.left-footer p{
+    font-size: 16px;
+    margin-block: 10px;
+}
+
+.footer-container .divider{
+    margin-block: 20px;
+}
+
+.lower-footer p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* The End */

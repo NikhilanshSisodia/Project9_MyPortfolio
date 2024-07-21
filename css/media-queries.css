@@ -115,6 +115,10 @@
         height: 60px;
         display: block;
     }
+
+    .left-footer{
+        text-align: justify;
+    }
 }
 
 @media (max-width: 440px) {

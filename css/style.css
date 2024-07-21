@@ -88,7 +88,12 @@ img{
     width: 100vw;
     height: 100vh;
     gap: 40px;
-    background: var(--primary-color);}
+    background: var(--primary-color);
+}
+
+#overflow{
+    overflow: hidden;
+}
 
 .link{
     font-family: "Poppins", sans-serif;
@@ -233,6 +238,11 @@ header{
 }
 
 .menu{
+    display: none;
+    z-index: 999;
+}
+
+.cross{
     display: none;
     z-index: 999;
 }

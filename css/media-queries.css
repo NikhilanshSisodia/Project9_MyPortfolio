@@ -1,0 +1,129 @@
+@media (orientation: portrait){
+    .about-content{
+        flex-wrap: wrap;
+        margin-block: 50px;
+        width: 100%;
+    }
+    
+    .about-content-skills{
+        margin-block: 50px;
+    }
+
+    .intro-container{
+        flex-wrap: wrap;
+    }
+
+    .about-content-main{
+        align-items: center;
+    }    
+
+    .about-content-skills{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        align-content: space-evenly;
+    }
+
+    .contact-content{
+        flex-wrap: wrap;
+    }
+
+    .left-contact{
+        width: 100%;
+    }
+
+    .right-contact{
+        align-items: center;
+        width: 100%;
+        margin-block: 50px;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+
+    .about-content{
+        margin: 0;
+    }
+
+    .upper-footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left-footer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-footer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-container{
+        flex-wrap: wrap;
+    }
+
+    .leftIntro{
+        width: 100%;
+    }
+
+    .rightIntro{
+        width: 100%;
+        display: none;
+    }
+
+    .about-content-main p{
+        text-align: justify;
+    }
+
+    .leftIntro p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .leftIntro h1{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .container{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 440px) {
+    
+    .emailIcon{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .emailImg{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .email p{
+        font-size: 16px;
+        margin: auto 0;
+    }
+
+    .secondarBtn{
+        font-size: 16px;
+    }
+
+    .primaryBtn{
+        font-size: 12px;
+    }
+
+    .divider{
+        margin-block: 30px;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+}

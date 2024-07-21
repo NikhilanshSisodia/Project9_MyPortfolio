@@ -108,6 +108,7 @@ img{
 .btn-container{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .secondaryBtn{
@@ -357,6 +358,7 @@ main{
     gap: 40px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .projectContent{
@@ -401,7 +403,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* gap: 10%; */
+    gap: 10%;
 }
 
 .left-contact{

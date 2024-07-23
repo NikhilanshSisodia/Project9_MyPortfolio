@@ -86,7 +86,6 @@
 
     .leftIntro h1{
         font-size: 36px;
-        text-align: center;
     }
 
     .container{
@@ -119,6 +118,16 @@
     .left-footer{
         text-align: justify;
     }
+}
+
+@media (orientation: landscape) {
+   .menu{
+    display: none;
+   } 
+
+   .cross{
+    display: none;
+   }
 }
 
 @media (max-width: 440px) {

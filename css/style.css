@@ -89,10 +89,13 @@ img{
     height: 100vh;
     gap: 40px;
     background: var(--primary-color);
+    overflow: hidden;
 }
 
 #overflow{
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .link{

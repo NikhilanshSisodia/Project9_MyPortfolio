@@ -83,19 +83,14 @@ img{
     position :absolute;
     align-items: center;
     justify-content: center;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 300vw;
+    height: 300vh;
     gap: 40px;
     background: var(--primary-color);
     overflow: hidden;
-}
-
-#overflow{
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .link{

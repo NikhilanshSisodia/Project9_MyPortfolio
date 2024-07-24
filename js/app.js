@@ -40,7 +40,6 @@ function callMenu(){
         menu.setAttribute('id','flex');
         toggleBtn.style.display = 'none';
         cross.style.display = 'block'
-        body.setAttribute('id','overflow');
     }
     else if(menu.getAttribute('id')=='flex'){
         menu.setAttribute('id','null');

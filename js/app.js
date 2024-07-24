@@ -39,7 +39,8 @@ function callMenu(){
     if(menu.getAttribute('id')=='null'){
         menu.setAttribute('id','flex');
         toggleBtn.style.display = 'none';
-        cross.style.display = 'block'
+        cross.style.display = 'block';
+        body.setAttribute('id','flex');
     }
     else if(menu.getAttribute('id')=='flex'){
         menu.setAttribute('id','null');

@@ -65,9 +65,23 @@ for(let i = 0; i<links.length; i++){
 
 function callLink(){
     menu.setAttribute('id','null');
-    toggleBtn.style.display = 'block';
     cross.style.display = 'none';
+    toggleBtn.style.display = 'block';
     body.setAttribute('id','null');
     abtSection[0].style.display = 'block';
     abtSection[1].style.display = 'block';  
+
+    const media = () => {
+        let q = matchMedia('(orientation: portrait)');
+        if(q.matches){
+            toggleBtn.style.display = 'block';
+        }else{
+            toggleBtn.style.display = 'none';
+        }
+    }
+
+    media();
+    
+    onload = media;
+    onresize = media;
 }

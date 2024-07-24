@@ -127,7 +127,7 @@
 }
 
 @media (orientation: landscape) {
-   .menu{
+   #menu{
     display: none;
    } 
 

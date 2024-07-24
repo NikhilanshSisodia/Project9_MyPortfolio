@@ -95,17 +95,16 @@
     
     .nav-links{
         display: none;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
-        position :absolute;
+        background-color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        top: 0;
         align-items: center;
         justify-content: center;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 300vw;
-        height: 300vh;
         gap: 40px;
-        background: var(--primary-color);
         overflow: hidden;
     }
 
@@ -116,6 +115,10 @@
     .menu{
         height: 60px;
         display: block;
+    }
+
+    .cross{
+        display: none;
     }
 
     .left-footer{

@@ -31,6 +31,7 @@ const toggleBtn = document.querySelector('.menu');
 const cross = document.querySelector('.cross');
 const menu = document.querySelector('.nav-links');
 const body = document.querySelector('body');
+const abtSection = document.querySelectorAll('.ContainerHidder');
 
 toggleBtn.addEventListener('click',callMenu);
 cross.addEventListener('click',callMenu);
@@ -41,11 +42,32 @@ function callMenu(){
         toggleBtn.style.display = 'none';
         cross.style.display = 'block';
         body.setAttribute('id','flex');
+        abtSection[0].style.display = 'none';
+        abtSection[1].style.display = 'none';
     }
     else if(menu.getAttribute('id')=='flex'){
         menu.setAttribute('id','null');
         toggleBtn.style.display = 'block';
-        cross.style.display = 'none'
+        cross.style.display = 'none';
         body.setAttribute('id','null');
+        abtSection[0].style.display = 'block';
+        abtSection[1].style.display = 'block';    
     }
+}
+
+//Links
+
+const links = document.querySelectorAll('.link');
+
+for(let i = 0; i<links.length; i++){
+    links[i].addEventListener('click', callLink);
+}
+
+function callLink(){
+    menu.setAttribute('id','null');
+    toggleBtn.style.display = 'block';
+    cross.style.display = 'none';
+    body.setAttribute('id','null');
+    abtSection[0].style.display = 'block';
+    abtSection[1].style.display = 'block';  
 }

@@ -85,3 +85,9 @@ function callLink(){
     onload = media;
     onresize = media;
 }
+
+function reload(){
+    window.location.reload()
+}
+
+onresize = reload;

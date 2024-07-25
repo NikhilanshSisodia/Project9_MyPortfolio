@@ -341,6 +341,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    flex-wrap: wrap;
     gap: 20px;
 }
 

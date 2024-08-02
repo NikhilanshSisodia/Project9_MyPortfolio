@@ -134,13 +134,13 @@
                     <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
                     <div class="contact-content">
                         <div class="left-contact">
-                            <form action="/" class="contact-form">
-                                <input type="text" placeholder="Your Name" required>
-                                <input type="text" placeholder="Your E-mail Address" required>
-                                <input type="text" placeholder="Subject" required>
-                                <textarea placeholder="Message" required></textarea>
-                                <a href="#" class="secondaryBtn">Send</a>
-                            </form>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                                <input type="hidden" name="access_key" value="57d234fd-5a75-40f1-9f7d-c79a5451923c">
+                                <input type="text" placeholder="Your Name" name="name" required>
+                                <input type="text" placeholder="Your E-mail Address" name="email" required>
+                                <input type="text" placeholder="Subject" name="subject" required>
+                                <textarea placeholder="Message" name="message" required></textarea>
+                                <button class="secondaryBtn submit" type="submit">Send</button>                            </form>
                         </div>
                         <div class="right-contact">
                             <h3>Get In Touch!</h2>

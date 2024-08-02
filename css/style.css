@@ -513,6 +513,14 @@ main{
     margin: auto 0;
 }
 
+.submit{
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: larger;
+}
+
 /* Footer */
 
 footer{

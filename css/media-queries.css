@@ -124,6 +124,14 @@
     .left-footer{
         text-align: justify;
     }
+
+    .submit{
+        display: inline-block;
+        padding: 15px;
+        width: 100%;
+        border-radius: 3px;
+        font-size: medium;
+    }
 }
 
 @media (orientation: landscape) {

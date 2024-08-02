@@ -519,6 +519,14 @@ main{
     width: 100%;
     border-radius: 3px;
     font-size: larger;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.submit:hover{
+    color: #fff;
+    background-color: #111;
 }
 
 /* Footer */

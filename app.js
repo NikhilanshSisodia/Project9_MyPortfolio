@@ -83,7 +83,6 @@ function callLink(){
     media();
     
     onload = media;
-    onresize = media;
 }
 
 function reload(){

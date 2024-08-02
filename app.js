@@ -81,8 +81,6 @@ function callLink(){
     }
 
     media();
-    
-    onload = media;
 }
 
 function reload(){

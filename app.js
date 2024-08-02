@@ -35,6 +35,9 @@ const abtSection = document.querySelectorAll('.ContainerHidder');
 
 toggleBtn.addEventListener('click',callMenu);
 cross.addEventListener('click',callMenu);
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+});
 
 function callMenu(){
     if(menu.getAttribute('id')=='null'){
@@ -86,3 +89,4 @@ function callLink(){
 function reload(){
     window.location.reload()
 }
+

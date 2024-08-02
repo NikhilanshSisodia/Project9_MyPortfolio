@@ -88,5 +88,3 @@ function callLink(){
 function reload(){
     window.location.reload()
 }
-
-onresize = reload;

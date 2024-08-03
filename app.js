@@ -32,12 +32,16 @@ const cross = document.querySelector('.cross');
 const menu = document.querySelector('.nav-links');
 const body = document.querySelector('body');
 const abtSection = document.querySelectorAll('.ContainerHidder');
+const inputs = document.querySelectorAll('input');
 
 toggleBtn.addEventListener('click',callMenu);
 cross.addEventListener('click',callMenu);
-document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault();
-});
+
+for(i=0; i<inputs.length; i++){
+    inputs[i].addEventListener('click', function(event) {
+        event.preventDefault();
+    });
+}
 
 function callMenu(){
     if(menu.getAttribute('id')=='null'){

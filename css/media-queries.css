@@ -9,6 +9,10 @@
         margin-block: 50px;
     }
 
+    .about-content-skills ul{
+        justify-content: center;
+    }
+
     .intro-container{
         flex-wrap: wrap;
     }

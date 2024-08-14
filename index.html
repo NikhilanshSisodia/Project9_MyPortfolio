@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+        <script src="./app.js" defer></script>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/media-queries.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Nikhilansh Sisodia || A Full Stack Web Developer</title>
+        
         <style>
             #home {
                 color: #c70000;
@@ -17,9 +20,9 @@
     
     <body id="null">
         <header>
-            <div class="navBar">
+            <div class="navBar" data-aos="fade" data-aos-delay="100">
                 <div class="navBar-container container">
-                    <a class="name poppins thin">Nikhilansh</a>
+                    <img src="/assets/favicon.ico" alt="icon" class="logo">
                     <svg class="menu" id="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px"><g fill='#353535' fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg>   
                     <svg class="cross" width="60px" height="60px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#000000"/>
@@ -35,7 +38,7 @@
         
             <div class="intro">
                 <div class="intro-container container">
-                    <div class="leftIntro">
+                    <div class="leftIntro" data-aos="fade" data-aos-delay="100">
                         <h1 class="roboto">Hi, I am Nikhilansh Sisodia</h1>
                         <p>A Web Developer building Websites interactive and responsive Web Applications. I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section. You will get to know more about me in the about section and in this page.</p>
                         <div class="btn-container">
@@ -43,7 +46,7 @@
                             <a href="#aboutSection" class="primaryBtn">About</a>
                         </div>
                     </div>
-                    <div class="rightIntro">
+                    <div class="rightIntro" data-aos="fade" data-aos-delay="100">
                         <img src="./assets/img1.png" alt="boy" class="intro-img">
                     </div>
                 </div>
@@ -53,19 +56,19 @@
         <hr class="divider">
     
         <main class="ContainerHidder">
-            <div class="about" id="aboutSection">
+            <div class="about" id="aboutSection" data-aos="fade">
                 <div class="about-container container">
                     <h2 class="roboto">About Me</h2>
                     <hr class="underline">
                     <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
                     <div class="about-content">
-                        <div class="about-content-main">
+                        <div class="about-content-main" data-aos="fade">
                             <h3 class="roboto">Get to know me!</h3>
                             <p>I'm a <b>Frontend Focused Web Developer</b> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <b>Projects</b> section.</p>
                             <p>I also like sharing content related to the stuff that I have learned over the years in <b>Web Development</b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Github and Instagram where I post useful content related to Web Development and Programming</p>
                             <p>I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.</p>
                         </div>
-                        <div class="about-content-skills">
+                        <div class="about-content-skills" data-aos="fade">
                             <h3 class="roboto">My Skills</h3>
                             <ul>
                                 <li type="none" class="skill">Html</li>
@@ -88,13 +91,13 @@
         
             <hr class="divider">
         
-            <div class="project" id="projectSection">
+            <div class="project" id="projectSection" data-aos="fade">
                 <div class="project-container container">
                     <h2 class="roboto">Projects</h2>
                     <hr class="underline">
                     <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
-                    <div class="project-content-container">
-                        <div class="projectContent">
+                    <div class="project-content-container" data-aos="fade">
+                        <div class="projectContent" data-aos="fade">
                             <img src="./assets/img2.png" alt="projectImg" class="projectImg">
                             <h3 class="poppins regular">Weather Forcast App</h3>
                             <div class="btn-container">
@@ -102,7 +105,7 @@
                                 <a href="https://nikhilanshsisodia.github.io/Project8_SelfMadeWeatherForecastApp/" class="primaryBtn" target="_blank">Live Demo</a>
                             </div>
                         </div>
-                        <div class="projectContent">
+                        <div class="projectContent" data-aos="fade">
                             <img src="./assets/img3.png" alt="projectImg" class="projectImg">
                             <h3 class="poppins regular">Quiz App</h3>
                             <div class="btn-container">
@@ -110,7 +113,7 @@
                                 <a href="https://nikhilanshsisodia.github.io/Project11_QuizApp/" class="primaryBtn" target="_blank">Live Demo</a>
                             </div>
                         </div>
-                        <div class="projectContent">
+                        <div class="projectContent" data-aos="fade">
                             <img src="./assets/img4.png" alt="projectImg" class="projectImg">
                             <h3 class="poppins regular">Todo List App</h3>
                             <div class="btn-container">
@@ -118,7 +121,7 @@
                                 <a href="https://nikhilanshsisodia.github.io/Project10_TodoList/" class="primaryBtn" target="_blank">Live Demo</a>
                             </div>
                         </div>
-                        <div class="projectContent">
+                        <div class="projectContent" data-aos="fade">
                             <img src="./assets/img5.png" alt="projectImg" class="projectImg">
                             <h3 class="poppins regular">The Pokédex</h3>
                             <div class="btn-container">
@@ -136,13 +139,13 @@
         <footer class="ContainerHidder">
             
             <div class="contact" id='contactSection'>
-                <div class="contact-container container">
+                <div class="contact-container container" data-aos="fade">
                     <h2 class="roboto">Contact</h2>
                     <hr class="underline">
                     <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
-                    <div class="contact-content">
-                        <div class="left-contact">
-                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <div class="contact-content" data-aos="fade">
+                        <div class="left-contact" data-aos="fade">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-aos="fade">
                                 <input type="hidden" name="access_key" value="57d234fd-5a75-40f1-9f7d-c79a5451923c">
                                 <input type="text" placeholder="Your Name" name="name" required>
                                 <input type="text" placeholder="Your E-mail Address" name="email" required>
@@ -150,7 +153,7 @@
                                 <textarea placeholder="Message" name="message" required></textarea>
                                 <button class="submit" type="submit">Send</button>                            </form>
                         </div>
-                        <div class="right-contact">
+                        <div class="right-contact" data-aos="fade">
                             <h3>Get In Touch!</h2>
                             <p>With expertise in HTML, CSS, JavaScript, and frameworks like React, I craft responsive and intuitive interfaces. Let's collaborate to bring your web projects to life. Contact me to discuss how we can achieve your vision together!</p>
                             <div class="email">
@@ -167,14 +170,14 @@
             <div class="footer">
                 <div class="footer-container container">
                     <div class="upper-footer">
-                        <div class="left-footer">
+                        <div class="left-footer" data-aos="fade">
                             <h3>Nikhilansh Sisodia</h3>
                             <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
                         </div>
-                        <div class="right-footer">
+                        <div class="right-footer" data-aos="fade">
                             <h3>Social</h3>
                             <div class="social-container">
-                            <svg  class="linkedinIcon" fill="#FFFCEA" height="80px" width="80px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                                <svg  class="linkedinIcon" fill="#FFFCEA" height="80px" width="80px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
                                 <g id="XMLID_801_">
                                     <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
                                         C77.16,101.969,74.922,99.73,72.16,99.73z"/>
@@ -185,8 +188,8 @@
                                         c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
                                         C310,145.43,300.549,94.761,230.454,94.761z"/>
                                 </g>
-                            </svg>
-                            <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 5000 5000" style="enable-background:new 0 0 5000 5000;"> 
+                                </svg>
+                                <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 5000 5000" style="enable-background:new 0 0 5000 5000;"> 
                                 <style type="text/css"> 
                                     .st0{fill:#353535;} .st1{fill:#FFFCEA;} 
                                 </style> <rect class="st0" width="5000" height="5000"/> 
@@ -194,8 +197,8 @@
                                     <circle class="st0" cx="2500" cy="2495.9" r="1675.1"/> 
                                     <path class="st1" d="M2500,789c-943.8,0-1708.2,764.4-1708.2,1708.2c0,755.9,489,1394.3,1168,1620.7 c85.4,14.9,117.4-36.3,117.4-81.1c0-40.6-2.1-175.1-2.1-318.2c-429.2,79-540.2-104.6-574.4-200.7 c-19.2-49.1-102.5-200.7-175.1-241.3c-59.8-32-145.2-111-2.1-113.2c134.5-2.1,230.6,123.8,262.6,175.1 c153.7,258.4,399.3,185.8,497.5,140.9c14.9-111,59.8-185.8,108.9-228.5c-380.1-42.7-777.2-190-777.2-843.4 c0-185.8,66.2-339.5,175.1-459.1c-17.1-42.7-76.9-217.8,17.1-452.7c0,0,143.1-44.8,469.8,175.1c136.7-38.4,281.9-57.7,427.1-57.7 s290.4,19.2,427.1,57.7c326.7-222.1,469.8-175.1,469.8-175.1c94,234.9,34.2,410,17.1,452.7c108.9,119.6,175.1,271.2,175.1,459.1 c0,655.5-399.3,800.7-779.4,843.4c61.9,53.4,115.3,155.9,115.3,316c0,228.5-2.1,412.1-2.1,469.8c0,44.8,32,98.2,117.4,81.1 c674.7-226.3,1163.7-866.9,1163.7-1620.7C4208.2,1553.4,3443.8,789,2500,789z"/>
                                 </g> 
-                            </svg>
-                            <svg class="instaIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px">
+                                </svg>
+                                <svg class="instaIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px">
                                 <g fill="#353535" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
                                 </g>
@@ -204,21 +207,21 @@
                                         <path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path>
                                     </g>
                                 </g>
-                            </svg>
-                            <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#353535" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
-                                </g>
-                                    <g fill="#fffcea" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                </svg>
+                                <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#353535" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                    </g>
+                                        <g fill="#fffcea" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <g transform="scale(5.12,5.12)">
                                     <path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path>
                                     </g>
-                                </g>
-                            </svg>
+                                    </g>
+                                </svg>
                             </div>
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="lower-footer">
+                    <div class="lower-footer" data-aos="fade">
                         <p>&copy; Copyright 2024. Made by <u>Nikhilansh Sisodia</u></p>
                     </div>
                 </div>
@@ -227,7 +230,14 @@
     
         <div class="cursor"></div>
     
-        <script src="./app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+          AOS.init({
+            duration: 200,
+          });
+        </script>
+
     </body>
 
 </html>

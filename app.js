@@ -17,7 +17,7 @@ document.addEventListener('mousemove',function (e){
         cursor.style.display = "none";
     }
     clearTimeout(timeout);
-    timeout = setTimeout(mouseStopped, 200);
+    timeout = setTimeout(mouseStopped, 800);
 });
 
 //Cursor effects on mouseout
@@ -70,6 +70,15 @@ for(let i = 0; i<links.length; i++){
     links[i].addEventListener('click', callLink);
 }
 
+const media = () => {
+    let q = matchMedia('(orientation: portrait)');
+    if(q.matches){
+        toggleBtn.style.display = 'block';
+    }else{
+        toggleBtn.style.display = 'none';
+    }
+}
+
 function callLink(){
     menu.setAttribute('id','null');
     cross.style.display = 'none';
@@ -94,3 +103,5 @@ function reload(){
     window.location.reload()
 }
 
+onresize = media;
+onload = media;

@@ -20,7 +20,7 @@ document.addEventListener('mousemove',function (e){
     timeout = setTimeout(mouseStopped, 800);
 });
 
-//Cursor effects on mouseout
+//Cursor effects on mouseout 
 document.addEventListener('mouseout', ()=>{
     cursor.style.display = "none";
 });
